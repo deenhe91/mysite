@@ -2,6 +2,8 @@
 
 body {
 	font-family: 'Muli', sans-serif;
+	padding:0px 50px 0px 50px;
+	margin: 0px 50px 0px 50px;
 }
 
 #about, #work, #contact {
@@ -33,14 +35,16 @@ header {
 	background: url("https://static.pexels.com/photos/247932/pexels-photo-247932.jpeg")no-repeat;
 	height:800px;
 	background-size:cover;
-	/*padding:0 200px 0 200px;*/
 }
 
 header h1 {
+	text-transform: uppercase;
+	letter-spacing: 10px;
 	padding: 50px 0;
 	font-family: 'IBM Plex Mono', monospace;
-	font-size:30px;
-	color:#ff9933;
+	font-size:32px;
+	font-weight:600;
+	color:#c26d00;
 }
 
 nav {
@@ -53,21 +57,22 @@ nav ul li {
 }
 
 nav ul li a {
-	text-transform:uppercase;
+	text-transform:lowercase;
 	text-decoration: none;
-	font-size:18px;
-	color:#DB0047;
+	font-size:22px;
+	color:#d33575;
 	padding-left: 80px;
 
 }
 
 header h2 {
 	width:1000px;
-	clear:;
 	font-family:'IBM Plex Mono', monospace;
 	font-size:72px;
 	line-height:80px;
-	color:#ffffff;
+	color:#c2c2d6;
+	text-shadow: 1px 1px #b3b3cc;
+	/*color:#b3b3cc;*/
 	padding:20px 0;
 }
 
@@ -80,6 +85,7 @@ header h2 span {
 
 #about {
 	background: #f7ebd5;
+	/*padding: 30px;*/
 }
 
 #about .full-width {
@@ -90,7 +96,7 @@ header h2 span {
 	font-family:'IBM Plex Mono', monospace;
 	font-size:36px;
 	color:#DB0047;
-	font-style: uppercase;
+	text-transform: uppercase;
 }
 
 #about p {
@@ -132,25 +138,29 @@ header h2 span {
 /***** CONTACT *****/
 
 #contact {
-	background: #ffffff;
-/*	url("https://static.pexels.com/photos/220197/pexels-photo-220197.jpeg") no-repeat;
-	background-size: contain;
-	background-image: center;
-	opacity: 0.5;*/
+	background: url("../img/phone_edited.jpeg");
+	background-size: 2000px auto;
+	overflow-y: auto;
+	/*border: 5px solid pink;*/
+	/*opacity:0.65; */
 }
 
 #contact .full-width {
 	padding: 110px 0;
 }
 
-#contact-img {
-	height: 400px;
-	width:600px;
-	/*border:12px solid #ffffff;*/
-}
 
 #contact h2, #email-header, #socialmedia-header, #contact ul {
-	padding-left: 115px;
+	/*padding-left: 10px;*/
+}
+
+#contact-info {
+	color:#c26d00;
+	background:#ffffff;
+	opacity:0.7;
+	float:right;
+	/*padding:30px;*/
+	text-align: center;
 }
 
 #envelope {
@@ -160,7 +170,13 @@ header h2 span {
 #contact h2 {
 	font-family: 'IBM Plex Mono', monospace;
 	font-size:36px;
-	color:#ffffff;
+	/*color:#ffffff;*/
+}
+
+#contact h3 {
+	font-family: 'IBM Plex Mono', monospace;
+	font-size:24px;
+	/*color:#ffffff;*/
 }
 
 #email-header {
@@ -177,9 +193,10 @@ header h2 span {
 
 #contact a {
 	text-decoration:none ;
-	color:#C49075;
-	font-weight:700;
-	font-size: 28px;
+	color:grey;
+	font-weight:300;
+	font-size: 24px;
+
 }
 
 #contact ul {
